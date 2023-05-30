@@ -1,0 +1,262 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  padding: 3rem 6rem;
+}
+.menu_icon {
+  display: none;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list-items ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list-items ul li {
+  list-style: none;
+  cursor: pointer;
+}
+#menu {
+  border: 2px solid black;
+  height: 1000px;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.menu {
+  display: initial !important;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  cursor: pointer;
+}
+.nav-list-items-menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-list-items-menu ul li {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  left: -30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.nav-list-items ul li:hover {
+  color: orangered;
+}
+.center_container {
+  display: flex;
+  flex: 1 1 0;
+  gap: 25px;
+  justify-content: flex-start;
+}
+.left_container {
+  flex-basis: 62%;
+}
+.left_container img {
+  width: 800px;
+}
+button {
+  background: orangered;
+  width: max-content;
+  height: 40px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+  background: black;
+  color: white;
+}
+.paragraph_content .content {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.sidebar {
+  color: white;
+}
+.sidebar p {
+  color: #ddd;
+}
+.right_container {
+  background: black;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.right_container h1 {
+  color: goldenrod;
+  margin: 0;
+}
+.content_container {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+.content_container .title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+.content_container p {
+  width: 90%;
+}
+footer {
+  display: flex;
+  gap: 15px;
+  flex: 1 1;
+  margin: 40px 0;
+}
+
+footer .items {
+  display: flex;
+  gap: 15px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+footer .items img {
+  width: 100px;
+  height: 130px;
+}
+
+footer .items h1 {
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  text-align: left;
+}
+
+footer .items h4 {
+  margin: 5px 0;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+footer.items h4:hover {
+  color: orangered !important;
+}
+footer .items p {
+  color: #aaa;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orangered;
+}
+
+@media screen and (max-width: 1024px) {
+  .left_container img {
+    width: 600px;
+  }
+  .content_container .title {
+    font-size: 2.5rem;
+  }
+  .content_container p {
+    width: 80%;
+  }
+  .content_container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .left_container img {
+    width: 350px;
+  }
+  .content_container .title {
+    font-size: 2rem;
+  }
+  .content_container h1 {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .content_container p {
+    /* width: 70%; */
+    text-align: left;
+  }
+  button {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #menu_icon {
+    display: initial !important;
+  }
+  .container {
+    padding: 1rem 2rem;
+  }
+  .left_container img {
+    width: 350px;
+  }
+  .center_container {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .left_container {
+    flex-direction: column;
+  }
+  .right_container {
+    flex-direction: column;
+  }
+  .content_container {
+    flex-direction: column;
+  }
+  .content_container p {
+    width: 100%;
+  }
+  .nav-list-items {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding: 0.6rem;
+  }
+  .left_container img {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .left_container img {
+    width: 280px;
+  }
+}
